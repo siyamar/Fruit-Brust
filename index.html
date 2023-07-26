@@ -14,31 +14,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'color-primary': '#F85559',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+
     </style>
 
 </head>
-<body class="font-lato">
+<body class="font-lato" style="border: 1px solid salmon; margin: 0;">
     <header>
         <!-- navbar -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="flex-none gap-2">
-                  <div class="form-control flex justify-between">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                  
-                
-                  </div>
-                </div>
-        </nav>
+        <nav class="my-5 max-w-screen-xl mx-auto" style="border: 1px solid salmon;">
+          <div class="navbar  bg-color-primary rounded-full px-5 lg:px-10 py-5 flex justify-between" >
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal p-1 space-x-6 text-white font-medium text-lg">
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Shop</li>
+                  <li>All Fruits</li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./images/logo.png" alt="">
+              <h3 class="text-white font-bold text-4xl">Fruit Burst</h3>
+            </div> 
+            <div>
+              <div class="lg:flex justify-between items-center relative hidden">
+                <input type="text" placeholder="Search here" class="input input-bordered w-96 rounded-full bg-white" />
+                <i class="fa-solid fa-magnifying-glass absolute right-4"></i>
+              </div>
+            </div> 
+              <div class="dropdown ">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box px-4">
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Shop</li>
+                  <li>All Fruits</li>
+                </ul>
+              </div>
+          </div>
+        </nav>  
+        <!-- slider -->
     </header>
     <main>
 
