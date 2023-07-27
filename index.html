@@ -32,12 +32,11 @@
   </style>
 
 </head>
-
 <body class="font-lato" style="border: 1px solid salmon; margin: 0;">
   <header>
     <!-- navbar -->
-    <nav class="lg:my-5 max-w-screen-xl mx-auto">
-      <div class="navbar bg-white  lg:bg-color-primary lg:rounded-full px-5 lg:px-10 lg:py-5 flex">
+    <nav class="lg:my-5 max-w-screen-xl mx-4 lg:mx-auto">
+      <div class="navbar bg-white  lg:bg-color-primary lg:rounded-full lg:px-10 lg:py-5 flex">
         <div class="hidden lg:flex flex-1">
           <ul class="menu menu-horizontal p-1 space-x-6 text-white font-medium text-lg">
             <li>Home</li>
@@ -73,8 +72,8 @@
       </div>
     </nav>
     <!-- slider -->
-    <div class="lg:my-5 max-w-screen-xl mx-auto relative">
-      <div class="carousel w-full lg:h-[450px] rounded-xl">
+    <div class="lg:my-5 max-w-screen-xl mx-4 lg:mx-auto relative">
+      <div class="carousel w-full lg:h-[550px] rounded-xl">
         <!-- slider 1 -->
         <div id="slide1" class="carousel-item relative w-full bg-black opacity-100 bg-cover"
           style="background-image: url('./images/banner1.png');">
@@ -87,7 +86,7 @@
                 We supply highly quality organic products
               </p>
               <button
-                class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
+                class="btn btn-error bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
                 Now</button>
             </div>
           </div>
@@ -108,7 +107,7 @@
                 We supply highly quality organic products
               </p>
               <button
-                class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
+                class="btn btn-error bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
                 Now</button>
             </div>
           </div>
@@ -129,7 +128,7 @@
                 We supply highly quality organic products
               </p>
               <button
-                class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
+                class="btn btn-error bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
                 Now</button>
             </div>
           </div>
@@ -150,7 +149,7 @@
                 We supply highly quality organic products
               </p>
               <button
-                class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
+                class="btn btn-error bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Shop
                 Now</button>
             </div>
           </div>
@@ -187,11 +186,11 @@
   </header>
   <main>
     <!-- deal of the day section -->
-    <section class="my-5 mb-10 lg:mt-32 max-w-screen-xl mx-auto">
+    <section class="my-5 lg:mt-48 max-w-screen-xl mx-4 lg:mx-auto">
       <!-- header section -->
       <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
         <!-- text section -->
-        <div class="max-w-[600px] mb-5">
+        <div class="max-w-[600px] mb-5 lg:mb-0">
           <h3 class="text-2xl lg:text-5xl font-extrabold mb-2 lg:mb-6">Deal of the day</h3>
           <p class="font-medium text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in
             a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -257,8 +256,8 @@
                   <img src="/images/./fruit6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center space-y-6">
-                  <p class="font-medium text-[#12121299]">Apples</p>
-                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <p class="text-4xl font-extrabold text-[#121212]">Apples</p>
+                  <p class="font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -268,8 +267,8 @@
                   </div>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn outline outline-color-primary text-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold bg-white">Close</button>
-                  <button class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white">Buy Now</button>
+                  <button class="btn btn-outline btn-error outline-color-primary capitalize">Close</button>
+                  <button class="btn btn-secondary bg-color-primary capitalize">Buy Now</button>
                 </div>
               </form>
             </dialog>
@@ -291,7 +290,30 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <a class="text-lg text-[#F85559] font-bold" href="">Details</a>
+            <!-- <a class="text-lg text-[#F85559] font-bold" href="">Details</a> -->
+            <button class="text-lg text-[#F85559] font-bold" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/./fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                  <p class="text-4xl font-extrabold text-[#121212]">Orange</p>
+                  <p class="font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-outline btn-error outline-color-primary capitalize">Close</button>
+                  <button class="btn btn-secondary bg-color-primary capitalize">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
         <!-- card 3 -->
@@ -310,7 +332,30 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <a class="text-lg text-[#F85559] font-bold" href="">Details</a>
+            <!-- <a class="text-lg text-[#F85559] font-bold" href="">Details</a> -->
+            <button class="text-lg text-[#F85559] font-bold" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/./fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                  <p class="text-4xl font-extrabold text-[#121212]">Red Dragon</p>
+                  <p class="font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-outline btn-error outline-color-primary capitalize">Close</button>
+                  <button class="btn btn-secondary bg-color-primary capitalize">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
         <!-- card 4 -->
@@ -329,24 +374,99 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-            <a class="text-lg text-[#F85559] font-bold" href="">Details</a>
+            <!-- <a class="text-lg text-[#F85559] font-bold" href="">Details</a> -->
+            <button class="text-lg text-[#F85559] font-bold" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/./fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                  <p class="text-4xl font-extrabold text-[#121212]">Banana</p>
+                  <p class="font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-outline btn-error outline-color-primary capitalize">Close</button>
+                  <button class="btn btn-secondary bg-color-primary capitalize">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </div>
       <!-- button -->
       <div class="flex justify-center">
-        <button
-          class="btn bg-color-primary border-none capitalize text-[14px] lg:text-xl font-extrabold text-white px-7 mb-2">Shop
-          All</button>
+        <button class="btn btn-error bg-color-primary capitalize text-white text-xl font-extrabold">Shop All</button>
       </div>
+    </section>
+    <!-- banner team section-->
+    <section class="my-5 lg:my-32 max-w-screen-xl lg:mx-auto mx-4">
+      <div class="hero lg:h-[600px] rounded-lg" style="background-image: url(./images/team.png);">
+        <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="flex flex-col justify-center items-center text-white">
+            <h1 class="mb-2 lg:mb-5 text-2xl lg:text-5xl font-extrabold">Meet the team section</h1>
+            <p class="mb-12 max-w-[600px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="flex gap-24 flex-col lg:flex-row">
+              <div class="flex flex-col justify-center items-center">
+                <img src="./images/member1.png" alt="">
+                <h3 class="text-2xl font-bold mt-7">Awlad Hossain</h3>
+                <p class="font-medium mb-4">Fruits Expert</p>
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-twitter text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-linkedin text-color-primary rounded-full"></i>
+                </div>
+              </div>               
+              <div class="flex flex-col justify-center items-center">
+                <img src="./images/member2.png" alt="">
+                <h3 class="text-2xl font-bold mt-7">Awlad Hossain</h3>
+                <p class="font-medium mb-4">Fruits Expert</p>
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-twitter text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-linkedin text-color-primary rounded-full"></i>
+                </div>
+              </div>               
+              <div class="flex flex-col justify-center items-center">
+                <img src="./images/member3.png" alt="">
+                <h3 class="text-2xl font-bold mt-7">Awlad Hossain</h3>
+                <p class="font-medium mb-4">Fruits Expert</p>
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-twitter text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-linkedin text-color-primary rounded-full"></i>
+                </div>
+              </div>               
+              <div class="flex flex-col justify-center items-center">
+                <img src="./images/member4.png" alt="">
+                <h3 class="text-2xl font-bold mt-7">Awlad Hossain</h3>
+                <p class="font-medium mb-4">Fruits Expert</p>
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-twitter text-color-primary rounded-full"></i>
+                  <i class="fa-brands fa-linkedin text-color-primary rounded-full"></i>
+                </div>
+              </div>               
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why choose us section -->
+    <section class="my-5 lg:my-32 max-w-screen-xl mx-auto">
+
     </section>
   </main>
   <footer>
 
   </footer>
 </body>
-
 </html>
-
-
-<!-- bg-gradient-to-b from-[#121212] to-[#fff] -->
